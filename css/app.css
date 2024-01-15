@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+#header{
+    font-family: 'Courgette', Courier, monospace;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+#mbtn{
+    font-family:'Courgette', Courier, monospace ;
+    display: none;
+}
+
+#nav > ul > a {
+   
+    display: inline-block;
+    text-decoration: none;
+    color:inherit;
+    padding: 45px 45px 0px 45px;
+    font-size:20px;
+    font-family:'Courgette', Courier, monospace;
+    max-height: 184px;
+   
+    
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #nav{
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    #nav::before{
+        content:"_______________________________";
+    }
+    #nav::after{
+        content:"_______________________________";
+    }
+    #nav > ul > a{
+        display: flex;
+        padding: 15px 0px 8px 0px;
+        justify-content: center;
+        
+    }
+
+    #nav.show{
+        max-height:330px;
+        opacity: 1;
+     }
+     #mbtn{
+        display: block;
+        margin: 20px;
+    }
+
+
+}

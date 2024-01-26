@@ -3,13 +3,6 @@ document.getElementById("mbtn").addEventListener("click",()=>{
         nav.classList.toggle("show");
 })
 
-// document.addEventListener("scroll",()=>{
-//         const nav = document.getElementById("barnav");
-
-//         if(window.scrollY > 60){
-//                 nav.classList.add("scrolled");
-//         }
-//         else{
-//                 nav.classList.remove("scrolled");
-//         }
-// })
+window.addEventListener("load",()=>{
+        document.getElementById("loader").style.display="none";
+})

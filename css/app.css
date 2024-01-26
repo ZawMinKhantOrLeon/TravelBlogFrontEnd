@@ -1,13 +1,17 @@
-*{
-    padding: 0;
-    margin: 0;
+*{  
     border-collapse: collapse;
     box-sizing: border-box;
+   
 }
+
+html{
+    scroll-behavior: smooth ;
+}
+
 #header{
     font-family: 'Courgette', Courier, monospace;
     font-size: 2rem;
-    letter-spacing: 10px;
+    letter-spacing: 10px;  
 }
 
 #mbtn{
@@ -16,26 +20,102 @@
 }
 
 #nav > ul > a {
-   
     display: inline-block;
     text-decoration: none;
     color:inherit;
-    padding: 45px 45px 0px 45px;
-    font-size:20px;
+    padding: 0px 25px 0px 0px;
+    font-size:15px;
     font-family:'Courgette', Courier, monospace;
-    max-height: 184px;
-   
-    
+  
+}
+.barnav {
+    position: sticky;
+    top:0;
+    z-index: 10;
 }
 
 
-@media screen and (max-width: 480px) {
+.aboutMeRoof { 
+    margin-top: 100px;
+    font-family: 'Courgette', Courier, monospace;
+    height: auto;
+}
+
+.headerMySelf{
+    margin-bottom: 60px;
+}
+
+.myPic{
+    width: 280px;
+    height: 380px;
+    border-radius: 20px;
+    margin: 0px 0px 0px 150px;
+}
+
+.postRoof{
+    margin:150px auto;
+    overflow: hidden;
+    width: 1000px ;
+  
+}
+
+.postHeader{
+    font-family: 'Courgette', Courier, monospace;
+}
+
+.radius{
+    border-radius: 20px;
+}
+.card {
+    /* Replace 'your-background-image.jpg' with your image path */
+    color:white; /* Set text color to white for better readability */
+    border: none; /* Remove card border for a cleaner look */
+    transition: all 0.5s;
+    height: 250px;
+    transform: scale(1.1);
+    filter: contrast(120%);
+    padding: 10px;
+     
+    font-family: 'Courgette', Courier, monospace;
+    
+  }
+
+  .card:hover{
+    transform: scale(1);
+    filter: contrast(140%);
+  }
+
+  .card-body {
+    padding: 20px; /* Add padding to the card body for spacing */
+    display: flex;
+    align-items: end;
+    justify-content:space-between;
+  }
+
+  .map{
+    border-radius: 20px;
+    border: none;
+    
+  }
+  .contactRoof{
+    font-family: 'Courgette', Courier, monospace;
+    color: black;
+  }
+
+
+  .footer h4{
+    font-family: 'Courgette', Courier, monospace;
+  }
+
+
+@media screen and (max-width: 580px) {
 
     #nav{
         max-height: 0;
         overflow: hidden;
         opacity: 0;
         transition: max-height 0.3s ease, opacity 0.3s ease;
+        
     }
 
     #nav::before{
@@ -58,6 +138,44 @@
      #mbtn{
         display: block;
         margin: 20px;
+    }
+    .barnav{
+       position: static;
+       transition: none;
+      
+    }
+    .aboutMeRoof{
+        margin:0px;
+    }
+    .headerMySelf{
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+    
+    .myPic{
+        margin: 0px;
+        border-radius: 15px;
+    }
+    
+    .postRoof{
+        margin:80px auto;
+        overflow: hidden;
+        width: 100% ;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+
+    .myPic {
+        margin: 0px;
+    }
+
+    .postRoof{
+        margin:200px auto;
+        overflow: hidden;
+        width: 100% ;
     }
 
 

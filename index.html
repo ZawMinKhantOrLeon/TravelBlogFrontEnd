@@ -4,38 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+
+    
     <title>Document</title>
-   
+
 </head>
 <body>
+
     
-    <div class="container-fluid min-vh-100 p-0 ">
-        <div class="row mx-0">
-            <div class="col-12 w-100 p-0">
-                <div id="headerRoof" class=" bg-white text-dark-50 w-100 h-25 text-center pt-4 pb-4">
-                   <h4 id="header" class="mt-3">The Traveller</h4>
-                   <div id="nav" class="mb-4">
+        <div id="barnav" class="d-md-flex text-center barnav pt-3 bg-white  align-items-center justify-content-between">
+            <h4 id="header" class="mb-3 ps-3">The Traveller</h4>
+            <div id="nav" class="">
                     <ul class="p-0">
-                        <a href="#">&#9753; Home</a>
-                        <a href="#">&#9753; About Us</a>
-                        <a href="#">&#9753; Weather</a>
-                        <a href="#" class="pb-0">&#9753; Contact</a>
+                        <a href="#home">&#9753; Home</a>
+                        <a href="#aboutMe">&#9753; About Me</a>
+                        <a href="#post">&#9753; Posts</a>
+                        <a href="#contact" class="pb-0">&#9753; Contact</a>
                     </ul>
+             </div>
+       </div>
+        <div id="mbtn" class="text-center">
+             <button class="btn btn-sm rounded-circle bg-dark text-white-50">M</button>
+        </div>
+    
+
+    <div class="container-fluid min-vh-100   ">
+        <div id="home" class="row m-0">
+            <div class="col-12 p-0 p-md-5">
+                <div id="" class="">
+                    <div class="swiper p-0 p-md-5">
+                        <div class="swiper-wrapper" data-swiper-autoplay="2000">
+                            <div class="swiper-slide"> <img src="/images/img2.jpg"  class="w-100  rounded-3" alt=""></div>   
+                            <div class="swiper-slide"> <img src="/images/banner-4.avif"  class="w-100  rounded-3" alt=""></div>   
+                            <div class="swiper-slide"> <img src="/images/banner-1.avif"  class="w-100  rounded-3" alt=""></div>
+                            <div class="swiper-slide"> <img src="/images/banner-2.jpg"  class="w-100  rounded-3" alt=""></div>
+                            <div class="swiper-slide"> <img src="/images/banner-3.jpg"  class="w-100  rounded-3" alt=""></div>   
+                         </div>                   
                     </div>
-                    <div id="mbtn">
-                        <button class="btn btn-sm rounded-circle bg-dark text-white-50">M</button>
+                </div>
+            </div> 
+        </div>
+        <div id="aboutMe"></div>
+        <div class="row  aboutMeRoof">
+            <div class="col-12 p-0 ">
+                <h4 class="text-center  headerMySelf">Hi,I am Zayaka</h4>
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                    <div id="myPic" class="wow text-center m-0 animate__animated animate__backInLeft">
+                        <img src="images/img8.jpg" class="myPic" alt="">
                     </div>
-                    <img src="/images/img4.jpg" id="img1" class="img-fluid px-lg-2 rounded-3" alt="">
-                    
+                    <div id="aboutMe" class="text-center p-5 mt-2 wow animate__animated animate__backInRight">
+                        <h4 class="text-center"> </h4>
+                        <p>I am a freelance photographer and influncer from Napali
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis autem molestias laboriosam eius officiis voluptatum quia, inventore voluptatibus, eveniet a. Incidunt explicabo animi omnis deserunt quaerat iusto, quia error! Sit at aut exercitationem ullam magni.</p>
+                    </div>
                 </div>
             </div>
-               
         </div>
+        <div id="post"></div>
+        <div  class="row postRoof">
+            <div   class="postHeader">
+                <h3  class="text-center mb-5">My Journey</h3>
+            </div>
+            <div class=" postSwiper  wow animate__animated animate__zoomInLeft">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide radius overflow-hidden  ">
+                    <div class="card"  style="background:  url('/images/nature-1.jpg'); background-size: cover; border-radius: 10px;">
+                        <div class="card-body">
+                          <h5 class="card-title">Elegant Card Title</h5>
+                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide radius overflow-hidden">
+                    <div class="card"  style="background:  url('/images/nature-2.avif'); background-size: cover;border-radius: 10px;">
+                        <div class="card-body">
+                          <h5 class="card-title">Elegant Card Title</h5>
+                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide radius overflow-hidden">
+                    <div class="card"  style="background:  url('/images/nature-3.jpg'); background-size: cover; border-radius: 10px;">
+                        <div class="card-body">
+                          <h5 class="card-title">Elegant Card Title</h5>
+                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide radius overflow-hidden">
+                    <div class="card" style="background:  url('/images/nature-4.jpg'); background-size: cover;border-radius: 10px;">
+                        <div class="card-body"  >
+                          <h5 class="card-title">Elegant Card Title</h5>
+                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide radius overflow-hidden">
+                    <div class="card" style="background:  url('/images/nature-5.avif'); background-size: cover;border-radius: 10px;">
+                        <div class="card-body"  >
+                          <h5 class="card-title">Elegant Card Title</h5>
+                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide radius overflow-hidden">
+                    <div class="card"  style="background:  url('/images/nature-6.avif'); background-size: cover;border-radius: 10px;">
+                        <div class="card-body" >
+                          <h5 class="card-title">Elegant Card Title</h5>
+                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="contact"></div>
+        <div class="container">
+            <div class="row contactRoof justify-content-center">
+                <div class="contactHeader mb-5">
+                    <h4 class="text-center">Let's Create Crazy Things Together!</h4>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="form ">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control bg-secondary">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Phone</label>
+                                <input type="text" class="form-control bg-secondary">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Description</label>
+                                <textarea name="" id="" cols="30" rows="10" class="form-control bg-secondary"></textarea>
+                            </div>
+                        <div class="d-flex justify-content-center m-4">
+                            <button class="btn btn-outline-secondary ">
+                                Send
+                            </button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 ">
+                    <div class=" ">
+                        <iframe class="w-100 map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2406.190021225854!2d-0.09341852278681251!3d51.51167452665907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2smm!4v1706260962371!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <footer>
+        <div class="text-center p-2 footer m-5">
+          &#10084; <h4>  by @ZawMinKhant </h4>
+        </div>
+       </footer>
     </div>
 
+
+   
+      
+   
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/node_modules/wow.js/dist/wow.js"></script>
+    <script src="/js/swiper.js" type="module"></script>
     <script src="/js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+          new WOW().init();
+        });
+      </script>
 </body>
 </html>

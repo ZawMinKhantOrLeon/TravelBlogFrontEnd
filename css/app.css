@@ -119,6 +119,30 @@ html{
     font-family: 'Courgette', Courier, monospace;
   }
 
+  .back-img{
+    background-image: url('/images/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    overflow: hidden;
+    display:flex;
+   
+    align-items: center;
+
+  }
+
+  .inner-text{
+    color: white !important;
+    font-family: 'Courgette', Courier, monospace;
+    padding: 20px;
+    margin-left: 80px
+
+  }
+
+  #justdecoration{
+    height: 70vh;
+  }
+
 
 @media screen and (max-width: 580px) {
 
@@ -174,6 +198,11 @@ html{
         overflow: hidden;
         width: 100% ;
     }
+
+    .inner-text{
+        margin-left: 0px
+    
+      }
 
 }
 

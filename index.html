@@ -82,7 +82,7 @@
                     <div class="card"  style="background:  url('/images/nature-1.jpg'); background-size: cover; border-radius: 10px;">
                         <div class="card-body">
                           <h5 class="card-title">Elegant Card Title</h5>
-                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                          <a href="#" class="btn btn-outline-info radius btn-sm">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <div class="card"  style="background:  url('/images/nature-2.avif'); background-size: cover;border-radius: 10px;">
                         <div class="card-body">
                           <h5 class="card-title">Elegant Card Title</h5>
-                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                          <a href="#" class="btn btn-outline-info radius btn-sm">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                     <div class="card"  style="background:  url('/images/nature-3.jpg'); background-size: cover; border-radius: 10px;">
                         <div class="card-body">
                           <h5 class="card-title">Elegant Card Title</h5>
-                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                          <a href="#" class="btn btn-outline-info radius btn-sm">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                     <div class="card" style="background:  url('/images/nature-4.jpg'); background-size: cover;border-radius: 10px;">
                         <div class="card-body"  >
                           <h5 class="card-title">Elegant Card Title</h5>
-                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                          <a href="#" class="btn btn-outline-info radius btn-sm">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <div class="card" style="background:  url('/images/nature-5.avif'); background-size: cover;border-radius: 10px;">
                         <div class="card-body"  >
                           <h5 class="card-title">Elegant Card Title</h5>
-                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                          <a href="#" class="btn btn-outline-info radius btn-sm">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -122,40 +122,59 @@
                     <div class="card"  style="background:  url('/images/nature-6.avif'); background-size: cover;border-radius: 10px;">
                         <div class="card-body" >
                           <h5 class="card-title">Elegant Card Title</h5>
-                          <a href="#" class="btn btn-info radius btn-sm">Read More</a>
+                          <a href="#" class="btn btn-outline-info radius btn-sm">Read More</a>
                         </div>
                     </div>
                 </div>
-                 <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+                
+            
 
               </div>
-              <div class="swiper-pagination"></div>
+           
+            </div>
+        </div>
+        
+
+        <div id="justdecoration" class="container-fluid p-0 ">
+            <div class="row p-0">
+                <div class="col-12 p-0  ">
+                    <div class="back-img w-100 overflow-hidden">
+                        <div class="inner-text">
+                            <h3>Your journey begin with Us</h3>
+                            <p style="width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus similique. Odit quaerat expedita quidem! Similique excepturi nemo deserunt, a iusto, possimus at dolore, culpa labore totam itaque? Distinctio, in.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="contact"></div>
+
         <div class="container">
             <div class="row contactRoof justify-content-center">
                 <div class="contactHeader mb-5">
                     <h4 class="text-center">Let's Create Crazy Things Together!</h4>
                 </div>
-                <div class="col-12 col-lg-5">
-                    <div class="form ">
-                        <form action="">
+                <div class="col-12 col-lg-5 " >
+                    <div class="form" id="contactForm">
+                        <form action="/storeinfo" method="post" id="form">
                             <div class="form-group">
-                                <label for="">Name</label>
-                                <input type="text" class="form-control bg-secondary">
+                                <label >Name</label>
+                                <input type="text" name="name" class="form-control text-white bg-secondary">
                             </div>
                             <div class="form-group">
-                                <label for="">Phone</label>
-                                <input type="text" class="form-control bg-secondary">
+                                <label >Phone</label>
+                                <input type="text" name="phone" class="form-control text-white bg-secondary">
                             </div>
                             <div class="form-group">
-                                <label for="">Description</label>
-                                <textarea name="" id="" cols="30" rows="10" class="form-control bg-secondary"></textarea>
+                                <label >Email</label>
+                                <input type="text" name="email" class="form-control text-white bg-secondary">
+                            </div>
+                            <div class="form-group">
+                                <label >Description</label>
+                                <textarea name="description" style="color: white;" id="" cols="30" rows="10" class="form-control bg-secondary"></textarea>
                             </div>
                         <div class="d-flex justify-content-center m-4">
-                            <button class="btn btn-outline-secondary ">
+                            <button type="submit" class="btn btn-outline-secondary " id="submitbtn">
                                 Send
                             </button>
                         </div>
@@ -186,7 +205,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/node_modules/wow.js/dist/wow.js"></script>
     <script src="/js/swiper.js" type="module"></script>
-    <script src="/js/app.js"></script>
+    <script src="/js/app.js" ></script>
     <script>
         $(document).ready(function() {
           new WOW().init();

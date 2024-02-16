@@ -126,9 +126,6 @@
                         </div>
                     </div>
                 </div>
-                
-            
-
               </div>
            
             </div>
@@ -156,7 +153,7 @@
                 </div>
                 <div class="col-12 col-lg-5 " >
                     <div class="form" id="contactForm">
-                        <form action="/storeinfo" method="post" id="form">
+                        <form action="http://localhost:3000/message/create" method="post" id="form">
                             <div class="form-group">
                                 <label >Name</label>
                                 <input type="text" name="name" class="form-control text-white bg-secondary">
@@ -191,7 +188,7 @@
 
        <footer>
         <div class="text-center p-2 footer m-5">
-          &#10084; <h4>  by @ZawMinKhant </h4>
+          &#10084; <h4> Design with &#10084;  by @ZawMinKhant </h4>
         </div>
        </footer>
     </div>
@@ -210,6 +207,39 @@
         $(document).ready(function() {
           new WOW().init();
         });
+
+        $(document).ready(function(){
+                // Attach submit event handler to the form
+                $('#form').submit(function(e){
+                  // Prevent the default form submission
+                  e.preventDefault();
+          
+                  // Get form data using serialize
+                  var formData = $(this).serialize();
+                  
+                  
+          
+                  // Perform any additional processing or validation here
+          
+                  // Example: Send the form data to a server using AJAX
+                  $.ajax({
+                    type: 'POST',
+                    url: 'http://127.0.0.1:3000/message/create',
+                    data: formData,
+                    success: function(response){
+                      // Handle the success response from the server
+                      console.log('Form submitted successfully:', response);
+                      window.alert("your message has been successfully delivered, we will get into contact with you soon!");
+                    },
+                    error: function(error){
+                      // Handle the error response from the server
+                      console.error('Error submitting form:', error);
+                    }
+                  });
+                });
+              });
+
+
       </script>
 </body>
 </html>
